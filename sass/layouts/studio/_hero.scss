@@ -1,5 +1,5 @@
 .section-hero {
-  max-width: 480px;
+  width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +39,7 @@
         hsla(235, 10%, 21%, 0.4),
         hsla(235, 10%, 21%, 0.4)
       ),
-      url(../images/mobile/mobile-hero.jpg);
+      url(../images/tablet/tablet-hero.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +50,7 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .section-hero {
-        background-image: url(../images/mobile/mobile-hero@2x.jpg);
+        background-image: url(../images/tablet/tablet-hero@2x.jpg);
       }
     }
   }
@@ -61,6 +61,25 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-size: 1600px 600px;
+    background-image: linear-gradient(
+        to top,
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../images/desktop/desktop-hero.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: url(../images/desktop/desktop-hero@2x.jpg);
+      }
+    }
   }
 }
 
