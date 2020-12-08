@@ -860,6 +860,15 @@ body {
     width: 768px;
     height: 400px;
     background-size: 768px 400px;
+    background-image: linear-gradient(to top, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/mobile/mobile-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-hero .section-hero {
+    background-image: url(../images/mobile/mobile-hero@2x.jpg);
   }
 }
 
