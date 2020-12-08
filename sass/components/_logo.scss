@@ -1,0 +1,35 @@
+.logo-header {
+  color: $black-logo;
+
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  @include for-size(tablet) {
+    margin-right: 88px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 93px;
+  }
+}
+
+.accent-logo {
+  color: $accent-color;
+}
+
+.logo-footer {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: $white-logo;
+
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
+}
