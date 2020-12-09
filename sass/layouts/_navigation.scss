@@ -1,9 +1,6 @@
 .navigation {
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
-
-  @include for-size(tablet) {
-    // display: flex;
-  }
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-between;
 }

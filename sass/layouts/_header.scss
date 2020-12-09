@@ -19,14 +19,7 @@
 
 .header-container {
   position: relative;
-
-  // justify-content: space-between;
   align-items: center;
-
-  @include for-size(tablet) {
-    // display: block;
-    // justify-content: space-between;
-  }
 }
 
 .site-nav {
@@ -34,10 +27,14 @@
   margin-bottom: 60px;
 
   @include for-size(tablet) {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     margin-bottom: 0;
     margin-right: 55px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 305px;
   }
 }
 
