@@ -80,6 +80,7 @@
   @include for-size(mobile-only) {
     display: none;
     position: absolute;
+    z-index: 3;
     top: 100%;
     left: 0;
     width: 100%;
