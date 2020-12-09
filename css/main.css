@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid rgba(230, 107, 127, 0.562);
 }
 
 img {
@@ -243,15 +242,31 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 580px;
-  min-width: 530px;
+  top: 93px;
+  margin-right: 15px;
+  margin-left: 15px;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+    margin-right: 0;
+    margin-left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    min-width: 530px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .button-close {
@@ -285,10 +300,16 @@ body {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .modal-button-submit {
@@ -305,6 +326,7 @@ body {
 .modal-agree a {
   color: #2196f3;
   text-decoration: underline;
+  margin-left: 5px;
 }
 
 .modal-agree input[type='checkbox'] {
@@ -401,6 +423,15 @@ body {
 .lable-checkbox {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media (min-width: 1200px) {
+  .lable-checkbox {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -835,8 +866,6 @@ body {
 }
 
 .section-hero {
-  width: 480px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -844,10 +873,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #c4c4c4;
-  background-size: 480px 400px;
+  background-size: cover;
   background-image: linear-gradient(to top, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/mobile/mobile-hero.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -858,9 +887,6 @@ body {
 
 @media (min-width: 768px) {
   .section-hero {
-    width: 768px;
-    height: 400px;
-    background-size: 768px 400px;
     background-image: linear-gradient(to top, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/tablet/tablet-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -875,11 +901,8 @@ body {
 
 @media (min-width: 1200px) {
   .section-hero {
-    width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-size: 1600px 600px;
     background-image: linear-gradient(to top, rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/desktop/desktop-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;

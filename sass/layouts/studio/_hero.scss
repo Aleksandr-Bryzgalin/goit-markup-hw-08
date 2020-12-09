@@ -1,6 +1,6 @@
 .section-hero {
-  width: 480px;
-  height: 400px;
+  // width: 480px;
+  // height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -9,7 +9,7 @@
   padding-right: 15px;
 
   background-color: $bg-hero;
-  background-size: 480px 400px;
+  background-size: cover;
   background-image: linear-gradient(
       to top,
       hsla(235, 10%, 21%, 0.4),
@@ -18,7 +18,7 @@
     url(../images/mobile/mobile-hero.jpg);
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -31,9 +31,6 @@
   }
 
   @include for-size(tablet) {
-    width: 768px;
-    height: 400px;
-    background-size: 768px 400px;
     background-image: linear-gradient(
         to top,
         hsla(235, 10%, 21%, 0.4),
@@ -56,11 +53,8 @@
   }
 
   @include for-size(desktop) {
-    width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-size: 1600px 600px;
     background-image: linear-gradient(
         to top,
         hsla(235, 10%, 21%, 0.4),
