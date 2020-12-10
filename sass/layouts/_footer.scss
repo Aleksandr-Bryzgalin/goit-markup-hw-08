@@ -36,6 +36,7 @@
 
   @include for-size(desktop) {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -44,6 +45,7 @@
 
   @include for-size(desktop) {
     padding-left: 70px;
+    margin-bottom: 0;
   }
 }
 

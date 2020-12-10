@@ -1,10 +1,17 @@
 .backdrop {
   position: fixed;
+
   top: 0;
   left: 0;
 
   width: 100%;
   height: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
 
   background-color: $bg-modal;
   z-index: 1;
@@ -16,12 +23,9 @@
 }
 
 .modal {
-  position: absolute;
+  position: relative;
 
-  top: 93px;
-
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-top: 93px;
 
   padding: 40px;
 
